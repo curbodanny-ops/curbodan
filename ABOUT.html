@@ -1,0 +1,233 @@
+<!DOCTYPE><html>
+<head>
+    
+    <title>About</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-image: url("phone (1).png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color:white;
+        }
+
+        .about {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            padding-bottom: 120px;
+        }
+
+        .content {
+            width: 90%;
+            max-width: 850px;
+            padding: 50px 45px;
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .content h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color:white;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color:white;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 220px;
+            padding: 25px 20px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 18px;
+            transition: 0.3s;
+        }
+
+        
+
+        .box h2 {
+            color:white;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .box p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 95%;
+            max-width: 850px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+        }
+
+        .bottom-nav a {
+            text-decoration: none;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 12px;
+            background: transparent;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .bottom-nav a:hover {
+            background: #00d9ff;
+            color: black;
+        }
+
+    
+
+        @media (max-width: 600px) {
+            .bottom-nav {
+                bottom: 10px;
+                width: 98%;
+                padding: 8px 5px;
+                gap: 3px;
+                border-radius: 18px;
+            }
+
+            .bottom-nav a {
+                padding: 10px 7px;
+                font-size: 11px;
+            }
+
+            .content {
+                padding: 35px 20px;
+            }
+
+            .content h1 {
+                font-size: 35px;
+            }
+
+            .content p {
+                font-size: 15px;
+            }
+
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="ABOUT">
+
+        <div class="content">
+
+            <h1>About Us</h1>
+
+            <p>
+                Welcome to our website! This platform was created
+                to provide visitors with a simple and enjoyable
+                experience where they can explore our products,
+                learn more about us, get in touch with our team,
+                and enjoy our available films.
+            </p>
+
+            <p>
+                Our goal is to create a clean, user-friendly,
+                and organized website that makes it easy for
+                everyone to find the information and content
+                they are looking for.
+            </p>
+
+            <div class="info">
+
+                <div class="box">
+                    <h2>Our Mission</h2>
+                    <p>
+                        To provide useful information and enjoyable
+                        content through a simple and accessible
+                        website.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h2>Our Vision</h2>
+                    <p>
+                        To create a modern online platform that
+                        connects people with products, information,
+                        and entertainment.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h2>Our Goal</h2>
+                    <p>
+                        To give every visitor a convenient,
+                        organized, and enjoyable browsing experience.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <nav class="bottom-nav">
+        <a href="HOMEPAGE.html">Home</a>
+        <a href="ABOUT.html">About</a>
+        <a href="PRODUCT.html">Product</a>
+        <a href="CONTACT.html">Contact</a>
+        <a href="film.html">Film Viewing</a>
+        <a href="INDEX.html" class="logout">Logout</a>
+    </nav>
+
+</body>
+</html>
+

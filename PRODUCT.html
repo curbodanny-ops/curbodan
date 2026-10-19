@@ -1,0 +1,310 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-image: url("phone (1).png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        .products {
+            width: 100%;
+            min-height: 100vh;
+            padding: 50px 30px 130px;
+            text-align: center;
+        }
+
+        .content {
+            width: 95%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .content h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .content > p {
+            font-size: 17px;
+            margin-bottom: 35px;
+            color: #e5e5e5;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 18px;
+            transition: 0.3s;
+        }
+
+        
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 14px;
+            margin-bottom: 15px;
+        }
+
+        .product h2 {
+            font-size: 21px;
+            margin-bottom: 10px;
+            color: #00d9ff;
+        }
+
+        .product p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+            color: #e5e5e5;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .add-cart {
+            width: 100%;
+            margin-top: 10px;
+            padding: 11px;
+            border: none;
+            border-radius: 10px;
+            background: #00d9ff;
+            color: #111;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+
+       
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 95%;
+            max-width: 850px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+        }
+
+        .bottom-nav a {
+            text-decoration: none;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 12px;
+            background: transparent;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .bottom-nav a:hover {
+            background: #00d9ff;
+            color: #111;
+        }
+
+
+        @media (max-width: 900px) {
+            .product-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .products {
+                padding: 35px 15px 120px;
+            }
+
+            .content {
+                width: 100%;
+                padding: 30px 15px;
+            }
+
+            .content h1 {
+                font-size: 35px;
+            }
+
+            .content > p {
+                font-size: 14px;
+            }
+
+            .product-container {
+                grid-template-columns: 1fr;
+            }
+
+            .product img {
+                height: 220px;
+            }
+
+            .bottom-nav {
+                bottom: 10px;
+                width: 98%;
+                padding: 8px 5px;
+                gap: 3px;
+                border-radius: 18px;
+            }
+
+            .bottom-nav a {
+                padding: 10px 7px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="products">
+
+        <div class="content">
+
+            <h1>Our Products</h1>
+
+            <p>
+                Explore our collection of T-Shirts, Hoodies, Shorts, and Pants.
+            </p>
+
+            <div class="product-container">
+
+                <div class="product">
+                    <img src="1.jpg" alt="Classic T-Shirt">
+                    <h2>Classic white T-Shirt</h2>
+                    <p>Simple and comfortable everyday T-Shirt.</p>
+                    <div class="price">₱150</div>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="2.jpg" alt="Oversized T-Shirt">
+                    <h2>Oversized black T-Shirt</h2>
+                    <p>Relaxed fit T-Shirt with a modern style.</p>
+                    <div class="price">₱150</div>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="3.jpg" alt="Graphic T-Shirt">
+                    <h2>Graphic T-Shirt</h2>
+                    <p>Stylish graphic design for casual outfits.</p>
+                    <div class="price">₱150</div>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="4.jpg" alt="Basic T-Shirt">
+                    <h2>Basic T-Shirt</h2>
+                    <p>Clean and simple T-Shirt for everyday wear.</p>
+                    <div class="price">₱200</div>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="5.jpg" alt="Premium T-Shirt">
+                    <h2>Premium T-Shirt</h2>
+                    <p>Soft fabric with a comfortable premium fit.</p>
+                    <div class="price">₱200</div>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="6.jpg" alt="Street T-Shirt">
+                    <h2>Street T-Shirt</h2>
+                    <p>Trendy T-Shirt made for a streetwear look.</p>
+                    <div class="price">₱250</div>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="7.jpg" alt="Classic Hoodie">
+                    <h2>Classic Hoodie</h2>
+                    <p>The Best comfortable hoodie for cool and casual days.</p>
+                    <div class="price">₱150</div>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="8.jpg" alt="Oversized Hoodie">
+                    <h2>Oversized Hoodie</h2>
+                    <p>Relaxed oversized fit with a modern appearance.</p>
+                    <div class="price">₱250</div>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="9.jpg" alt="Premium Hoodie">
+                    <h2>Premium Hoodie</h2>
+                    <p>Soft and warm hoodie with a premium design.</p>
+                    <div class="price">₱100</div>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="10.jpg" alt="Casual Shorts">
+                    <h2>Casual Shorts</h2>
+                    <p>Lightweight shorts perfect for everyday activities.</p>
+                    <div class="price">₱100</div>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <nav class="bottom-nav">
+        <a href="HOMEPAGE.html">Home</a>
+        <a href="ABOUT.html">About</a>
+        <a href="PRODUCT.html">Product</a>
+        <a href="CONTACT.html">Contact</a>
+        <a href="film.html">Film Viewing</a>
+        <a href="INDEX.html" class="logout">Logout</a>
+    </nav>
+
+</body>
+</html>
+
